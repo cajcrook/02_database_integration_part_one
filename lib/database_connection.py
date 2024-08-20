@@ -1,6 +1,6 @@
 import psycopg
 from psycopg.rows import dict_row
-import osc
+import os
 
 # This class helps us interact with the database.
 # It wraps the underlying psycopg library that we are using.
@@ -8,7 +8,7 @@ import osc
 # If the below seems too complex right now, that's OK.
 # That's why we have provided it!
 class DatabaseConnection:
-    DATABASE_NAME =  # <-- CHANGE THIS!
+    DATABASE_NAME =  "music_library"
 
     # This method connects to PostgreSQL using the psycopg library. We connect
     # to localhost and select the database name given in argument.
